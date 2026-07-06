@@ -1,16 +1,14 @@
-/* Navbar - Fixed to use only inline/inline-block, no grid */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
   background-color: #333;
   padding: 1rem 0;
-  position: relative; /* Demonstrates positioning */
-}
-
-.nav-container {
-  max-width: 1200px; /* Fixed: correct unit */
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: block; /* Container is block */
-  overflow: hidden; /* Clear floats */
+  position: inline-block;
 }
 
 .logo {
@@ -19,13 +17,14 @@
 }
 
 .logo img {
-  height: 5vh;
+  height: 3rem;
   vertical-align: middle;
 }
 
+
 .nav-links {
   display: inline-block;
-  margin-left: 3rem; /* Reasonable spacing */
+  margin-left: 3rem; 
   vertical-align: middle;
 }
 
@@ -34,110 +33,84 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
-  margin: 0 1.25rem; /* Replaced word-spacing with proper margins */
+  margin: 0 1.25rem; 
   padding: 0.5rem 0;
 }
-
-/* Username as proper element (assume <span class="username"> or similar in HTML) */
-.username {
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  margin-left: 2rem;
-  vertical-align: middle;
-  font-weight: 500;
-}
-
-/* Float demonstration in navbar (e.g., pushing username to the right) */
-.nav-container .logo {
-  float: left;
-}
-
-.nav-container .nav-links {
-  float: left;
-}
-
-.nav-container .username {
-  float: right;
-}
-
-/* Clearfix for navbar floats */
-.nav-container::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Hero Section - Uses floats + positioning, no grid */
-.hero {
-  background-color: #f8f9fa;
-  padding: 80px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-container {
-  max-width: 1200px; /* Fixed: correct unit */
-  margin: 0 auto;
-  padding: 0 2rem;
-  overflow: hidden; /* Clear floats */
-}
-
-.hero-left {
-  float: left;
-  width: 48%;
-  padding-right: 4rem;
-  box-sizing: border-box;
-}
-
-.hero-right {
-  float: right;
-  width: 48%;
-  text-align: center;
-  box-sizing: border-box;
-  position: relative; /* Demonstrates relative positioning */
+.username{
+  margin-right: 5px;
+  text-align: right;
+  font-size: 20px;
+  color: #fff;
+margin-top: 10px; 
+margin-left:600px;
 }
 
 .hero-left h1 {
   font-size: 3.2rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  color: #222;
+  color: #000000;
 }
 
-.L1 {
-  color: #0052cc;
+.L1{
+  color: #0081b4;
 }
 
-.hero-left p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 2rem;
-}
-
-.services-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2.5rem;
+.services-list li::before {
+  position: absolute;
+  left: 0;
+  color: #0081b4;
+  font-weight: bold;
 }
 
 .services-list li {
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
   color: #333;
-  position: relative; /* Example of positioning inside list */
+  position: relative; 
   padding-left: 1.5rem;
 }
 
-.services-list li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  color: #0066ff;
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  image-rendering: 100%;
+  max-height: 50vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-right {
+  float: right;
+  width: 48%;
+  text-align: center;
+  position: relative;
+  margin-top: -100px; 
+}
+
+.hero {
+  background-color: beige;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.hero-container {
+  color:beige;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.hero-left {
+  float: left;
+  width: 48%;
+  padding-right: 4rem;
 }
 
 .cta-button {
-  background-color: #0066ff;
+  background-color: #0081b4;
   color: white;
   padding: 14px 32px;
   text-decoration: none;
@@ -145,37 +118,4 @@
   font-weight: 600;
   display: inline-block;
   transition: all 0.3s;
-  position: relative;
-  z-index: 2; /* Demonstrates z-index with positioning */
-}
-
-.cta-button:hover {
-  background-color: #0052cc;
-  transform: translateY(-3px);
-}
-
-.hero-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  max-height: 60vh;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-}
-
-/* Optional: Additional float example (e.g., badge or overlay) */
-.hero-badge {
-  position: absolute;
-  top: 20px;
-  right: -20px;
-  background: #0066ff;
-  color: white;
-  padding: 8px 20px;
-  border-radius: 30px;
-  font-weight: bold;
-  transform: rotate(12deg);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-  z-index: 3;
 }

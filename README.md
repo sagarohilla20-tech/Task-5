@@ -74,6 +74,4 @@ The design uses percentage-based widths and viewport units (`vh`) for natural re
 
 This project is for demonstration/educational purposes. Feel free to use and modify as needed.
 
----
 
-Made with ❤️ for clean clothes and great UX.
