@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Laundry Services Website
 
 A modern, responsive single-page website for a professional laundry and dry cleaning service. Built with clean HTML5 and CSS3, demonstrating modern layout techniques like floats, positioning, and responsive design principles.
