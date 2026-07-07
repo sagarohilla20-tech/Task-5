@@ -76,7 +76,7 @@ The design uses percentage-based widths and viewport units (`vh`) for natural re
 This project is for demonstration/educational purposes. Feel free to use and modify as needed.
 
 
-=======
+--------
 Laundry Services Website
 A modern, responsive single-page website for a professional laundry and dry cleaning service. Built with clean HTML5 and CSS3, demonstrating modern layout techniques like floats, positioning, and responsive design principles.
 
@@ -135,4 +135,4 @@ Add accessibility features (ARIA labels, keyboard navigation)
 This project is for demonstration/educational purposes. Feel free to use and modify as needed.
 
 Made with ❤️ for clean clothes and great UX.
->>>>>>> da92b748333b1c5e00d39e0e5e4d664cde392dd4
+
